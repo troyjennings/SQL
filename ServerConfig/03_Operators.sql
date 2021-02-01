@@ -11,7 +11,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'Backup Restore Group',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'DBAS1@company.com; ngc.InfoServices1@company.com', 
+		@email_address=N'DBAS1@company.com; company.InfoServices1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
