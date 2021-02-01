@@ -16,12 +16,12 @@ DECLARE
   @Set_profile_name VARCHAR(255) = 'default',
   @Set_description VARCHAR(255) = '',
   @Set_email_address VARCHAR(255) = '',
-  @Set_replyto_address VARCHAR(255) = 'noreply@nexxtgearcapital.com',
+  @Set_replyto_address VARCHAR(255) = 'noreply@company.com',
   @Set_display_name VARCHAR(255) = '',
-  @Set_mailserver_name VARCHAR(255) = 'relay.nextgearcapital.com',
+  @Set_mailserver_name VARCHAR(255) = 'relay.company.com',
   @Set_port INT = 25;
 
-  SELECT @Set_email_address = @@SERVERNAME + '@nextgearcapital.com', @Set_display_name = 'UAT SSIS - ' + @@SERVERNAME
+  SELECT @Set_email_address = @@SERVERNAME + '@company.com', @Set_display_name = 'UAT SSIS - ' + @@SERVERNAME
 
 --==========================================================
 -- Create a Database Mail account

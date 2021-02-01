@@ -1,10 +1,9 @@
-[9:27 AM] Trepes, Alex (CAI - Carmel)
+
 SQL
 
 /*
 Title: Setup-DAGS_NGN_DWH.sql
 Description: This script will help an administrator setup Distributed Availability Groups (DAGS)
-Author(s): Alex Trepes, Zach Thompson, and Sam Stepter
 Date: 1/17/19 4:21 PM
 */
 /*
@@ -47,14 +46,14 @@ CREATE AVAILABILITY GROUP [UNGN_DWH_AO_AG]
    AVAILABILITY GROUP ON  
       'UNGN_AO_AG' WITH    
       (   
-         LISTENER_URL = 'tcp://exp1ungnag01.nextgearcapital.com:5022',    
+         LISTENER_URL = 'tcp://[someIP]:5022',    
          AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
          FAILOVER_MODE = MANUAL,   
          SEEDING_MODE = AUTOMATIC   
       ),   
       'UDWH_AO_AG' WITH    
       (   
-         LISTENER_URL = 'tcp://exp1udwhag03.nextgearcapital.com:5022',   
+         LISTENER_URL = 'tcp://[someIP]:5022',   
          AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
          FAILOVER_MODE = MANUAL,   
          SEEDING_MODE = AUTOMATIC   
@@ -66,14 +65,14 @@ GO
    AVAILABILITY GROUP ON  
      'UNGN_AO_AG' WITH    
       (   
-         LISTENER_URL = 'tcp://exp1ungnag01.nextgearcapital.com:5022',    
+         LISTENER_URL = 'tcp://[someIP]:5022',    
          AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
          FAILOVER_MODE = MANUAL,   
          SEEDING_MODE = AUTOMATIC   
       ),   
       'UDWH_AO_AG' WITH    
       (   
-         LISTENER_URL = 'tcp://exp1udwhag03.nextgearcapital.com:5022',   
+         LISTENER_URL = 'tcp://[someIP]:5022',   
          AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
          FAILOVER_MODE = MANUAL,   
          SEEDING_MODE = AUTOMATIC   

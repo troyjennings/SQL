@@ -11,7 +11,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'Backup Restore Group',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'DBAS1@nextgearcapital.com; ngc.InfoServices1@coxautoinc.com', 
+		@email_address=N'DBAS1@company.com; ngc.InfoServices1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
@@ -25,7 +25,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'DBA + PagerDuty',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'dba-alerts1@nextgear.pagerduty.com;dbas@nextgearcapital.com', 
+		@email_address=N'dba-alerts1@company.pagerduty.com;dbas@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
@@ -39,7 +39,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'DBA Operators',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'DBAS1@nextgearcapital.com; ngc.InfoServices1@coxautoinc.com', 
+		@email_address=N'DBAS1@company.com; ngc.InfoServices1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
@@ -53,22 +53,10 @@ EXEC msdb.dbo.sp_add_operator @name=N'DBAPagerDuty',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'dba-alerts1@nextgear.pagerduty.com', 
+		@email_address=N'dba-alerts1@company.pagerduty.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
-/****** Object:  Operator [DSC BI Support]    Script Date: 3/20/2019 9:58:21 AM ******/
-EXEC msdb.dbo.sp_add_operator @name=N'DSC BI Support', 
-		@enabled=1, 
-		@weekday_pager_start_time=90000, 
-		@weekday_pager_end_time=180000, 
-		@saturday_pager_start_time=90000, 
-		@saturday_pager_end_time=180000, 
-		@sunday_pager_start_time=90000, 
-		@sunday_pager_end_time=180000, 
-		@pager_days=0, 
-		@email_address=N'tim.schubach1@nextgearcapital.com', 
-		@category_name=N'[Uncategorized]'
 GO
 
 /****** Object:  Operator [Information Services Support]    Script Date: 3/20/2019 9:58:21 AM ******/
@@ -81,12 +69,12 @@ EXEC msdb.dbo.sp_add_operator @name=N'Information Services Support',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'ngc.InfoServices1@coxautoinc.com', 
+		@email_address=N'ngc.InfoServices1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
-/****** Object:  Operator [NextGear - Warehouse Reporting]    Script Date: 3/20/2019 9:58:21 AM ******/
-EXEC msdb.dbo.sp_add_operator @name=N'NextGear - Warehouse Reporting', 
+/****** Object:  Operator [company - Warehouse Reporting]    Script Date: 3/20/2019 9:58:21 AM ******/
+EXEC msdb.dbo.sp_add_operator @name=N'company - Warehouse Reporting', 
 		@enabled=1, 
 		@weekday_pager_start_time=90000, 
 		@weekday_pager_end_time=180000, 
@@ -95,7 +83,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'NextGear - Warehouse Reporting',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'WarehouseReporting1@nextgearcapital.com', 
+		@email_address=N'WarehouseReporting1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
@@ -109,7 +97,7 @@ EXEC msdb.dbo.sp_add_operator @name=N'No Page DBA Operator',
 		@sunday_pager_start_time=90000, 
 		@sunday_pager_end_time=180000, 
 		@pager_days=0, 
-		@email_address=N'DBAS1@nextgearcapital.com', 
+		@email_address=N'DBAS1@company.com', 
 		@category_name=N'[Uncategorized]'
 GO
 
