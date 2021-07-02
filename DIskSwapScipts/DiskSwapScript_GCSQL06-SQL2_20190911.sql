@@ -1,0 +1,36 @@
+
+-- ON SECONDARY NODE
+
+-- DROP USER DATABASES
+
+/*
+DROP DATABASE [Bravos];
+GO
+
+DROP DATABASE [Citadel];
+GO
+
+DROP DATABASE [CRSDBA];
+GO
+
+DROP DATABASE [Inbound];
+GO
+
+DROP DATABASE [IronBank];
+GO
+
+DROP DATABASE [KingsLanding];
+GO
+
+DROP DATABASE [Qyburn];
+GO
+
+DROP DATABASE [Raven];
+GO
+
+DROP DATABASE [RiverRun];
+GO
+
+*/
+-- STOP SQL SERVICE
+
