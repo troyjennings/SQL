@@ -1,0 +1,1 @@
+﻿(New-Object -COM Shell.Application).WindowsSecurity()
